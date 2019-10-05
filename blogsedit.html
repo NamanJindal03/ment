@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MenteeChain Admin Panel</title> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/js/Lightweight-Chart/cssCharts.css"> 
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle waves-effect waves-dark" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-dark" href="index.html"><strong>Mentee Chain</strong></a>
+				
+		<div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right"> 
+								
+				
+				<li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown2"><i class="fa fa-bell fa-fw"></i> <i class="material-icons right">arrow_drop_down</i></a></li>
+				  <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><i class="fa fa-user fa-fw"></i> <b>NJ</b> <i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </nav>
+    </div>
+		<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+<li><a href="#"><i class="fa fa-user fa-fw"></i> My Profile</a>
+</li>
+<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+</li> 
+<li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+</li>
+</ul>
+<ul id="dropdown2" class="dropdown-content w250">
+  
+    <li class="divider"></li>
+    <li>
+            <div>
+                <i class="fa fa-tasks fa-fw"></i> New Task
+                <span class="pull-right text-muted small">4 min</span>
+            </div>
+        </a>
+    </li>
+    
+    <li class="divider"></li>
+    <li>
+        <a class="text-center" href="#">
+            <strong>See All Alerts</strong>
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </li>
+</ul>
+  
+	   <!--/. NAV Bar side one  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a class="active-menu waves-effect waves-dark" href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#" class="waves-effect waves-dark"><i class="fa fa-desktop"></i> Blogs</a>
+                    </li>
+					<li>
+                        <a href="#" class="waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i> Testimonial</a>
+                    </li>
+                    <li>
+                        <a href="#" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> Sprint</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" class="waves-effect waves-dark"><i class="fa fa-table"></i> Services</a>
+                    </li>
+                    <!-- <li>
+                        <a href="form.html" class="waves-effect waves-dark"><i class="fa fa-edit"></i> Forms </a>
+                    </li> -->
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+      
+		<div id="page-wrapper">
+		  <div class="header"> 
+                        <h1 class="page-header">
+                            Blogs
+                            
+                        </h1>
+						<ol class="breadcrumb">
+					  <li><a href="#">Home</a></li>
+                      <li ><a href="#">Blogs</a></li>
+                      <li class="active"><a href="#">Edit</a></li>
+                      
+					</ol> 
+									
+		</div>
+            <div id="page-inner">
+                <!-- /. ROW  --> 
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                        <div class="input-field col s6">
+                            <input id="title" type="text" class="validate">
+                            <label for="title">Title</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="author" type="text" class="validate">
+                            <label for="author">Author</label>
+                        </div>
+                        </div>
+                        <div class="row">
+                                <div class="input-field col s12">
+                                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                  <label for="textarea1">Textarea</label>
+                                </div>
+                        </div>
+                        <div class="row">                        
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>File</span>
+                                  <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <input type ="submit" class ="btn waves-effect waves-light" value = "Submit"/>
+                    </div>
+
+                           
+                          <!-- <div class="row">
+                            <div class="input-field col s12">
+                              <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                              <label for="disabled">Disabled</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="password" type="password" class="validate">
+                              <label for="password">Password</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="email" type="email" class="validate">
+                              <label for="email">Email</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col s12">
+                              This is an inline input field:
+                              <div class="input-field inline">
+                                <input id="email_inline" type="email" class="validate">
+                                <label for="email_inline">Email</label>
+                                <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                              </div>
+                            </div> 
+                          </div>-->
+                    </form>
+                </div>
+				<!--/.row-->			
+            </div>
+
+					
+      
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+	
+	<!-- Bootstrap Js -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	
+	<!-- <script type="text/javascript">
+		$(function(){
+			$(".includePage").load("trial.html");
+		});
+	</script> -->
+	
+	<script src="assets/materialize/js/materialize.min.js"></script>
+	
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+	
+	
+	<script src="assets/js/easypiechart.js"></script>
+	<script src="assets/js/easypiechart-data.js"></script>
+	
+	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+	
+    <!-- Custom Js -->
+    <script src="assets/js/custom-scripts.js"></script> 
+ 
+
+</body>
+
+</html>
